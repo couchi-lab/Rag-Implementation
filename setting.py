@@ -9,5 +9,5 @@ load_dotenv(dotenv_path)
 
 DSN = os.environ.get("DB_NAME")
 USN = os.environ.get("USER_NAME")
-PWD = os.environ.get("PASSWORD")
+DB_PASSWORD = os.environ.get("DB_PASSWORD")
 AI_KEY = os.environ.get("AI_KEY")
