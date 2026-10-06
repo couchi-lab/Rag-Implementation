@@ -15,10 +15,4 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    return {
-        "Hello": "World",
-        "DSN": DSN,
-        "USN": USN,
-        "PWD": PWD
-    }
-print(DSN, USN, PWD)
+    return {"Hello": "World"}   

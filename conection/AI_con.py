@@ -22,4 +22,5 @@ def communicate(user_input: str):
     return chat_completion.choices[0].message.content
 
 if __name__ == "__main__":
-    print("directly running the script")
+    print("Directory running the script AI_con.py\n")
+    print(communicate("Explain the importance of fast language models"))
