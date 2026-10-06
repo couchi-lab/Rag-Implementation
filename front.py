@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from conection.AI_con import communicate
+from connection.AI_con import communicate
 app = FastAPI()
 @app.get("/")
 async def root():
