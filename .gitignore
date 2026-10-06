@@ -1,8 +1,1 @@
 .env
-
-DB_NAME=dsn
-USER_NAME="username"
-PASSWORD = "password"
-UNIt.db
-port 1128;
-
