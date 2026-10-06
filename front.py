@@ -1,18 +1,16 @@
-import os
-from os.path import join, dirname
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-
+from conection.AI_con import communicate
 app = FastAPI()
-origins = ["127.0.0.1"]
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
 @app.get("/")
-def read_root():
-    return {"Hello": "World"}   
+async def root():
+    return {"message": "server running"}
+
+
+@app.get("/chat")
+async def chat(prompt: str):
+    result = await communicate(prompt)
+
+    return {
+        "input": prompt,
+        "output": result
+    }
