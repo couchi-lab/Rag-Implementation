@@ -7,10 +7,11 @@
 /demo_rag/src/.env
 /DB_API/.env
 
-
 /py/.env
 .venv/
 __pycache__/
 *.pyc
 .env
 **/.env
+
+
